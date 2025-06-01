@@ -1,10 +1,8 @@
 :root {
-    --primary-color: #0000ff;
-    --secondary-color: #ffa500;
+    --primary-color: #2f3c7e;
+    --secondary-color: #fbeaeb;
     --accent1-color:#000044;
     --accent2-color: #eaeff9;
-    --heading-font:"Noto Sans" Sans-serif;
-    --body-font: "Roboto" Sans-serif;
 }
 * {
     margin: 0;
@@ -12,8 +10,10 @@
     box-sizing: border-box;
 }
 body {
-    font-family: var(--body-font);
-    color: var(--accent2-color);
+    font-family: "Lato", sans-serif;
+    font-style: italic;
+    font-weight: 600;
+    color: var(--accent1-color);
     border: 2px solid brown;
 
 }
@@ -45,11 +45,11 @@ header, main, footer {
 .n-flex {
     display: flex;
     justify-content: space-evenly;
-    /*border: 1px solid grey;*/
+    border: 1px solid grey;
     border-radius: 5px;
     width: 80%;
     margin-right: 5%;
-    /*background-color: var(--secondary-color);*/
+    background-color: var(--secondary-color);
 }
 
 .n-flex a {
@@ -62,13 +62,9 @@ header, main, footer {
     border-radius: 3px;
 }
 
-h1 {
-    font-family: var(--heading-font);
-    color: var(--accent2-color);
-}
-
 h2 {
-    font-family: var(--heading-font);
+    font-family: "Sofia", sans-serif;
+;
     color: var(--accent1-color);
 }
 
@@ -89,7 +85,8 @@ nav, p, section, article {
 }
 
 article {
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
+    color: var(--accent1-color);
     position: absolute;
     top: 110px;
     width: 100%;
@@ -108,7 +105,8 @@ h1 {
     padding: 16px;
     text-align: center;
     opacity: 0.6;
-    background: var(--secondary-color);
+    font-family: "Sofia", sans-serif;
+    background-color: var(--secondary-color);
     color: var(--accent1-color);
 }
 
@@ -175,12 +173,13 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     border: 2px solid gray;
-    background-color: var(--accent1-color);
+    background-color: var(--primary-color);
 }
 
 footer p {
     margin-right: 30%;
     padding-left: 1%;
+    color: var(--accent2-color);
 }
 
 .socialmedia {
